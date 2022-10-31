@@ -30,7 +30,11 @@ res.send({
   })
 })
 
-
+app.post('/error', (req, res) => {
+res.send({
+      status: 404,
+      message: "page not found"
+})
 
 app.post('/additonalPages', (req, res) => {
 res.send({
